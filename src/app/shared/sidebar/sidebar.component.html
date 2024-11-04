@@ -1,0 +1,67 @@
+<div
+  class="sidebar"
+  [class.collapsed]="isCollapsed"
+  (mouseenter)="toggleSidebar()"
+  (mouseleave)="toggleSidebar()"
+>
+  <br />
+  <br />
+  <nav class="nav-menu">
+    <div class="nav-section">
+      <a routerLink="/blog" class="nav-item">
+        <span class="material-icons">book</span>
+        <span class="nav-text">Blog personal</span>
+      </a>
+      <p>ACERCA DE MI</p>
+      <a routerLink="/perfil-profesional" class="nav-item">
+        <span class="material-icons">person</span>
+        <span class="nav-text">Perfil profesional</span>
+      </a>
+      <a routerLink="/experiencia" class="nav-item">
+        <span class="material-icons">work</span>
+        <span class="nav-text">Experiencia</span>
+      </a>
+      <a routerLink="/estudios" class="nav-item">
+        <span class="material-icons">school</span>
+        <span class="nav-text">Estudios</span>
+      </a>
+      <a routerLink="/contactame" class="nav-item">
+        <span class="material-icons">email</span>
+        <span class="nav-text">Contactame</span>
+      </a>
+    </div>
+    <div class="nav-section">
+      <p>REDES</p>
+      <a
+        href="https://www.linkedin.com/in/andresfelipevargasgonzalez/"
+        class="nav-item"
+        (click)="setActive('linkedin')"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="material-icons">public</span>
+        <span class="nav-text">LinkedIn</span>
+      </a>
+      <a
+        href="https://github.com/Lorddragonist"
+        class="nav-item"
+        (click)="setActive('github')"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="material-icons">code</span>
+        <span class="nav-text">GitHub</span>
+      </a>
+      <a
+        href="https://www.instagram.com/andrezzgonzzalezz/"
+        class="nav-item"
+        (click)="setActive('instagram')"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="material-icons">photo_camera</span>
+        <span class="nav-text">Instagram</span>
+      </a>
+    </div>
+  </nav>
+</div>

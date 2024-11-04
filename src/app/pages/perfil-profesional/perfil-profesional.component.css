@@ -1,0 +1,66 @@
+.main-container {
+  display: flex;
+  height: 100vh;
+}
+
+app-sidebar {
+  flex-shrink: 0;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.profile-container {
+  width: 100%;
+  padding: 1.2rem;
+  overflow-y: auto;
+  margin-left: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.profile-image {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.profile-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #f3ecec;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.profile-description {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: #dad4d4;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.profile-description strong {
+  color: #c9c2c2;
+}
+
+@media (min-width: 1025px) {
+  .profile-container {
+    margin-left: 500px;
+    margin-right: 160px;
+    width: 100%;
+  }
+}

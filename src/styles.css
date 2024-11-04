@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #1b1a1a;
+  color: #ffffff;
+}
+
+body,
+html {
+  display: flex;
+  height: 100vh;
+}
+
+app-sidebar {
+  flex-shrink: 0;
+}
+
+main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
